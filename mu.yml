@@ -1,0 +1,12 @@
+environments:
+- name: acceptance
+- name: production
+service:
+  name: msp-pipeline-example
+  port: 80
+  pathPatterns:
+  - /*
+  pipeline:
+    source:
+      provider: GitHub
+      repo: stelligent/msp-pipeline-example
