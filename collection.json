@@ -16,7 +16,7 @@
             "type": "text/javascript",
             "exec": [
               "tests[\"Status code is 200\"] = responseCode.code === 200;",
-							"tests[\"responseBody is correct\"] = responseBody.has(\"<html>\\n<head>\\n<title>Mu MSP Example</title>\\n</head>\\n<body>\\nHello from Hosting and Stelligent!\\n</body>\\n</html>\");"
+							"tests[\"responseBody is correct\"] = responseBody.has(\"<html>\\n<head>\\n<title>Mu MSP Example</title>\\n</head>\\n<body>\\nGoodbye from Hosting and Stelligent!\\n</body>\\n</html>\");"
             ]
           }
         }
