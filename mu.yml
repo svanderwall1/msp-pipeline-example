@@ -1,5 +1,7 @@
 environments:
 - name: msp-pipeline-example-acceptance
+  cluster:
+    imageId: ami-d2163bb7
   vpcTarget:
     vpcId: vpc-9aa942f3
     instanceSubnetIds:
