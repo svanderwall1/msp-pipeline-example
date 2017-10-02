@@ -30,3 +30,7 @@ service:
     source:
       provider: GitHub
       repo: stelligent/msp-pipeline-example
+    acceptance:
+      environment: msp-pipeline-example-acceptance
+    production:
+      environment: msp-pipeline-example-production
