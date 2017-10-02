@@ -1,0 +1,34 @@
+{
+	"variables": [],
+	"info": {
+		"name": "msp-automation-example-test",
+		"_postman_id": "8ec9f575-7b8c-6c14-3274-81d907b24296",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "index request",
+			"event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"responseBody is correct\"] = responseBody.has(\"<html>\\n<head>\\n<title>Mu MSP Example</title>\\n</head>\\n<body>\\nHello from Hosting and Stelligent!\\n</body>\\n</html>\");"
+            ]
+          }
+        }
+      ],
+			"request": {
+				"url": "http://mu-load-Elb-162S0TRWM1FS8-1361185789.us-east-2.elb.amazonaws.com/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
