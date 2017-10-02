@@ -32,5 +32,9 @@ service:
       repo: stelligent/msp-pipeline-example
     acceptance:
       environment: msp-pipeline-example-acceptance
+      image: aws/codebuild/eb-nodejs-6.10.0-amazonlinux-64:4.0.0
+      type: linuxContainer
     production:
       environment: msp-pipeline-example-production
+      image: aws/codebuild/eb-nodejs-6.10.0-amazonlinux-64:4.0.0
+      type: linuxContainer
