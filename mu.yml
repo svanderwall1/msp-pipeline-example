@@ -1,6 +1,6 @@
 environments:
-- name: acceptance
-- name: production
+- name: msp-pipeline-example-acceptance
+- name: msp-pipeline-example-production
 service:
   name: msp-pipeline-example
   port: 80
