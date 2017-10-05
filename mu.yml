@@ -41,7 +41,7 @@ service:
       image: aws/codebuild/eb-nodejs-6.10.0-amazonlinux-64:4.0.0
       type: linuxContainer
 templates:
-  mu-environment-msp-pipeline-example-acceptance:
+  mu-extra-msp-pipeline-example:
     Resources:
       S3TestBucket:
         Type: AWS::S3::Bucket
