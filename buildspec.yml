@@ -3,9 +3,10 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo '...replace with real build commands...'
+      - mkdir app
+      - tar -xvf latest.tar.gz -C app
 
 artifacts:
   files:
-    - '**/*'
+    - 'app/**/*'
 
