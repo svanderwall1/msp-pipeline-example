@@ -3,10 +3,9 @@ version: 0.2
 phases:
   build:
     commands:
-      - mkdir app
-      - tar -xvf latest.tar.gz -C app
+      - echo 'Doing nothing'
 
 artifacts:
   files:
-    - 'app/**/*'
+    - '**/*'
 
