@@ -4,7 +4,6 @@ phases:
   build:
     commands:
       - echo 'Doing nothing'
-      - exit 1
 
 artifacts:
   files:
