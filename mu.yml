@@ -40,40 +40,4 @@ service:
       environment: msp-pipeline-example-production
       image: aws/codebuild/eb-nodejs-6.10.0-amazonlinux-64:4.0.0
       type: linuxContainer
-templates:
-  mu-extra-msp-pipeline-example:
-    Resources:
-      S3TestBucket:
-        Type: AWS::S3::Bucket
-        Properties:
-          BucketName: "jimtest-s3-bucket"
-#      CodePipelineSNSTopic:
-#        Type: AWS::SNS::Topic
-#        Properties:
-#          Subscription:
-#            - Endpoint: "jim.rohrer@stelligent.com"
-#              Protocol: email
-#      PipelineFailureEventRule:
-#        Type: "AWS::Events::Rule"
-#        Properties:
-#          Description: "Failure notification for msp pipeline"
-#          EventPattern:
-#            source:
-#              - "aws.codepipeline"
-#            detail-type:
-#              - "CodePipeline Pipeline Execution State Change"
-#            detail:
-#              state:
-#                - "FAILED"
-#              pipeline:
-#                - Ref: Pipeline
-#          State: ENABLED
-#          Targets:
-#            - Arn:
-#                Ref: CodePipelineSNSTopic
-#              Id: kqed-pipeline-topic
-#              InputTransformer:
-#                InputPathsMap:
-#                  pipeline: "$.detail.pipeline"
-#                  executionid: "$.detail.execution-id"
-#                InputTemplate: '"The Pipeline <pipeline> has failed with execution-id: <executionid>."'
+
