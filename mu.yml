@@ -1,6 +1,6 @@
 environments:
-- name: msp-pipeline-example-acceptance
-- name: msp-pipeline-example-production
+- name: msp-acceptance
+- name: msp-production
 service:
   name: msp-pipeline-example
   port: 80
@@ -11,11 +11,11 @@ service:
       provider: GitHub
       repo: stelligent/msp-pipeline-example
     acceptance:
-      environment: msp-pipeline-example-acceptance
+      environment: msp-acceptance
       image: aws/codebuild/eb-nodejs-6.10.0-amazonlinux-64:4.0.0
       type: linuxContainer
     production:
-      environment: msp-pipeline-example-production
+      environment: msp-production
       image: aws/codebuild/eb-nodejs-6.10.0-amazonlinux-64:4.0.0
       type: linuxContainer
 
