@@ -28,14 +28,8 @@ to make and push changes.*
 Before you do anything, it is recommended that you read up on the [Mu Documentation](https://github.com/stelligent/mu/blob/develop/README.md)
 before continuing.
 
-To deploy this application, a few modifications need to be made to the `mu.yml` file:
 
-* To target an existing VPC, change the VPC ID and Subnet IDs under the `vpcTarget` section
-* To create a new VPC, delete the `vpcTarget` section
-* To use a customized version of Amazon's ECS image, update the `imageId` in the `cluster` section
-* To use Amazon's latest ECS image, delete the `cluster` section
-
-Once modifications have been made to the `mu.yml` file, run
+To deploy, simply run
 
 `mu pipeline up`
 
