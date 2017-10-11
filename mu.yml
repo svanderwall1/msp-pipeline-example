@@ -1,28 +1,6 @@
 environments:
 - name: msp-pipeline-example-acceptance
-  cluster:
-    imageId: ami-d2163bb7
-  vpcTarget:
-    vpcId: vpc-9aa942f3
-    instanceSubnetIds:
-      - subnet-407f570a
-      - subnet-8332c4ea
-      - subnet-ee707896
-    elbSubnetIds:
-      - subnet-407f570a
-      - subnet-8332c4ea
-      - subnet-ee707896
 - name: msp-pipeline-example-production
-  vpcTarget:
-    vpcId: vpc-9aa942f3
-    instanceSubnetIds:
-      - subnet-407f570a
-      - subnet-8332c4ea
-      - subnet-ee707896
-    elbSubnetIds:
-      - subnet-407f570a
-      - subnet-8332c4ea
-      - subnet-ee707896
 service:
   name: msp-pipeline-example
   port: 80
